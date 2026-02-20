@@ -2,6 +2,11 @@
 
 Frontend app for login, geolocation dashboard, IP lookup, history, bulk delete, and map pin.
 
+## Repository Links
+
+- Web Repo: https://github.com/Argusxiii13/WebRepository.git
+- API Repo: https://github.com/Argusxiii13/ApiRepository.git
+
 ## Tech Stack
 
 - Node.js 20+
@@ -39,6 +44,8 @@ If needed, create `.env.local` and set:
 NEXT_PUBLIC_API_BASE=http://localhost:8000/api
 ```
 
+Backend/API setup is documented in `../ApiRepository/README.md`.
+
 ### 4) Start Frontend Server
 
 ```bash
@@ -51,32 +58,11 @@ Open:
 http://localhost:3000
 ```
 
-## Full App Run (API + Web)
+## Backend Requirement
 
-You must run both repositories at the same time:
-
-1. In `ApiRepository`:
-
-	```bash
-	php artisan serve
-	```
-
-2. In `webrepository`:
-
-	```bash
-	npm run dev
-	```
-
-3. Open the UI:
-
-	```text
-	http://localhost:3000
-	```
-
-## Login Credentials
-
-- Email: `exam.user@example.com`
-- Password: `Password123!`
+- Use **XAMPP first** (default path for this project): start Apache and MySQL.
+- Run the Laravel API from `ApiRepository` on `http://localhost:8000`.
+- For full backend setup (database, migration, seed credentials), see `../ApiRepository/README.md`.
 
 ## Important Notes
 
@@ -85,12 +71,6 @@ You must run both repositories at the same time:
 - If port `3000` is busy, Next.js may use `3001`. Use the exact URL shown in terminal output.
 
 ## Common Troubleshooting
-
-- If login fails with `401`, run in API repo:
-
-  ```bash
-  php artisan migrate --seed
-  ```
 
 - If API calls fail, ensure Laravel is running on port `8000`.
 - If Next.js fails with a lock error, stop all `next dev` processes and restart.
