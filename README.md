@@ -62,6 +62,7 @@ http://localhost:3000
 
 - Use **XAMPP first** (default path for this project): start Apache and MySQL.
 - Run the Laravel API from `ApiRepository` on `http://localhost:8000`.
+- Create the backend database in phpMyAdmin: `http://localhost/phpmyadmin/`.
 - For full backend setup (database, migration, seed credentials), see `../ApiRepository/README.md`.
 
 ## Important Notes
