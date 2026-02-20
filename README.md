@@ -13,7 +13,7 @@ Frontend app for login, geolocation dashboard, IP lookup, history, bulk delete, 
 - npm 10+
 - Next.js 16
 
-## Fresh Machine Setup (No Guesswork)
+## Setup
 
 ### 1) Prerequisites
 
@@ -24,13 +24,13 @@ Install and verify:
 
 ### 2) Install Dependencies
 
-From this folder (`webrepository`):
+From this folder (`WebRepository`):
 
 ```bash
 npm install
 ```
 
-### 3) Optional Environment File
+### 3) Configure Environment
 
 By default, the app already targets:
 
@@ -46,7 +46,7 @@ NEXT_PUBLIC_API_BASE=http://localhost:8000/api
 
 Backend/API setup is documented in `../ApiRepository/README.md`.
 
-### 4) Start Frontend Server
+### 4) Start Web Server
 
 ```bash
 npm run dev
@@ -58,12 +58,17 @@ Open:
 http://localhost:3000
 ```
 
-## Backend Requirement
+## Integration Requirement
 
-- Use **XAMPP first** (default path for this project): start Apache and MySQL.
+- Use XAMPP first. This project was built and tested with XAMPP.
 - Run the Laravel API from `ApiRepository` on `http://localhost:8000`.
 - Create the backend database in phpMyAdmin: `http://localhost/phpmyadmin/`.
 - For full backend setup (database, migration, seed credentials), see `../ApiRepository/README.md`.
+
+## Seeded Login Credentials
+
+- Email: `exam.user@example.com`
+- Password: `Password123!`
 
 ## Important Notes
 
