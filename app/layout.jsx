@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Starry Geo App",
+  title: "Geo App",
   description: "React app with Laravel auth and IP geolocation dashboard",
 };
 

@@ -40,8 +40,8 @@ export default function Page() {
   const [isBusy, setIsBusy] = useState(false);
   const [toast, setToast] = useState(null);
 
-  const [email, setEmail] = useState("exam.user@example.com");
-  const [password, setPassword] = useState("Password123!");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const [user, setUser] = useState(null);
   const [geo, setGeo] = useState(null);
@@ -280,7 +280,7 @@ export default function Page() {
         ) : null}
         <main className="min-h-screen px-6 py-10 text-slate-100">
           <section className="mx-auto mt-16 w-full max-w-md rounded-2xl border border-slate-300/20 bg-slate-900/65 p-8 shadow-2xl backdrop-blur">
-            <h1 className="text-2xl font-semibold">Starry Geo Login</h1>
+            <h1 className="text-2xl font-semibold">Geo Login</h1>
             <p className="mt-2 text-sm text-slate-300">
               Sign in to view your IP geolocation and run IP-based lookups.
             </p>
@@ -316,10 +316,6 @@ export default function Page() {
                 {isBusy ? "Signing in..." : "Login"}
               </button>
             </form>
-
-            <p className="mt-4 text-xs text-slate-300">
-              Seeder credentials: <strong>exam.user@example.com / Password123!</strong>
-            </p>
           </section>
         </main>
       </>
@@ -343,7 +339,7 @@ export default function Page() {
         <section className="mx-auto w-full max-w-6xl rounded-2xl border border-slate-300/20 bg-slate-900/65 p-6 backdrop-blur">
           <header className="flex flex-col gap-3 border-b border-slate-300/20 pb-4 md:flex-row md:items-center md:justify-between">
             <div>
-              <h1 className="text-2xl font-semibold">Starry Geo Dashboard</h1>
+              <h1 className="text-2xl font-semibold">Geo Dashboard</h1>
               <p className="text-sm text-slate-300">Logged in as {user.email}</p>
             </div>
             <button
